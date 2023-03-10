@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "254527870375",
+    "project_id": "biocardd",
+    "storage_bucket": "biocardd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254527870375:android:09d8eaf3e34f5ad6f29282",
+        "android_client_info": {
+          "package_name": "com.example.biocard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254527870375-jgja77pncmbdtdcus6j0g8h4a0r6l7vh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.biocard",
+            "certificate_hash": "fde4e9ed1253a1ac3955e9f46f7cd32ae8d27d6a"
+          }
+        },
+        {
+          "client_id": "254527870375-e19luvblsjchu3f4jhb9l6mnh7a7eh26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaj33yp99iwkZVNTlcO_NZzXzBiUMmmm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254527870375-e19luvblsjchu3f4jhb9l6mnh7a7eh26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
