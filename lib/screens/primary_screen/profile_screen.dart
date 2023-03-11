@@ -252,7 +252,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       SocialIconTile(
                                         textController: instagramController,
                                         onTap: (){
-                                          if (!facebookController.text.contains('https://')) {
+                                          if (!instagramController.text.contains('https://')) {
                                             UserInfoFirestoreService().updateInstagramLink('https://${instagramController.text}');
                                           }else{
                                             UserInfoFirestoreService().updateInstagramLink(instagramController.text);
@@ -268,7 +268,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       SocialIconTile(
                                         textController: twitterController,
                                         onTap: (){
-                                          if (!facebookController.text.contains('https://')) {
+                                          if (!twitterController.text.contains('https://')) {
                                             UserInfoFirestoreService().updateTwitterLink('https://${twitterController.text}');
                                           }else{
                                             UserInfoFirestoreService().updateTwitterLink(twitterController.text);
@@ -284,7 +284,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       SocialIconTile(
                                         textController: linkedinController,
                                         onTap: (){
-                                          if (!facebookController.text.contains('https://')) {
+                                          if (!linkedinController.text.contains('https://')) {
                                             UserInfoFirestoreService().updateLinkedInLink('https://${linkedinController.text}');
                                           }else{
                                             UserInfoFirestoreService().updateLinkedInLink(linkedinController.text);
