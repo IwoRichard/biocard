@@ -179,7 +179,17 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         ),
                         const SizedBox(height: 40,),
                         InkWell(
-                          onTap: (){},
+                          onTap: ()async{
+                            final link = Uri.parse('https://biocardd.web.app/');
+                            if (await canLaunchUrl(link)) {
+                              launch(
+                                'https://biocardd.web.app/',
+                                forceSafariVC: true
+                              );
+                            }else{
+                              throw Exception('Could not launch $link');
+                            }
+                          },
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.5),
