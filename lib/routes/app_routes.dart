@@ -17,15 +17,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-
-// class AutheService {
-//   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-
-//   User? getCurrentUser() {
-//     return _firebaseAuth.currentUser;
-//   }
-// }
-
 authr(){
   StreamBuilder(
     stream: AuthService().firebaseAuth.authStateChanges(),
@@ -130,13 +121,6 @@ class AppRouter{
       return const MaterialPage(child: ErrorScreen());
     },
     redirect: (context, state) {
-      // final currentUser = AutheService().getCurrentUser();
-
-      // if (currentUser == null) {
-      //   return '/';
-      // }
-      
-
       if (state.path == '/:username') {
         return '/:username';
       }else{
