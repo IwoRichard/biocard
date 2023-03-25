@@ -31,6 +31,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
   TextEditingController instagramController = TextEditingController();
   TextEditingController linkedinController = TextEditingController();
   TextEditingController emailController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    titleController.dispose();
+    bioController.dispose();
+    facebookController.dispose();
+    twitterController.dispose();
+    instagramController.dispose();
+    linkedinController.dispose();
+    emailController.dispose();
+  }
   
 
   String email = '';

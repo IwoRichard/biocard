@@ -23,6 +23,13 @@ class _AddLinkScreenState extends State<AddLinkScreen> {
   bool isLoading = false;
   TextEditingController linkTitleController = TextEditingController();
   TextEditingController linkController = TextEditingController();
+
+  @override
+  void dispose() {
+    super.dispose();
+    linkTitleController.dispose();
+    linkController.dispose();
+  }
   
   @override
   Widget build(BuildContext context) {
