@@ -121,7 +121,7 @@ class AppRouter{
         name: 'details',
         builder: (context, state) {
           return DetailsScreen(
-            username: state.params['username']!
+            username: state.params['username']??""
           );
         },
       ),
